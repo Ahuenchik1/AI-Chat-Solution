@@ -1059,7 +1059,7 @@ footer {
     right: 0;
     width: 50%;
     height: 100%;
-    background-image: url('images/robot.png'); /* Убедитесь, что путь к изображению правильный */
+    background-image: url('robot.png'); /* Убедитесь, что путь к изображению правильный */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right center;
