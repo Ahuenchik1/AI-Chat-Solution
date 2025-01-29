@@ -30,7 +30,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/background.jpg'); /* Путь к изображению */
+    background-image: url('background.jpg'); /* Путь к изображению */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
