@@ -30,17 +30,17 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/background.jpg'); /* Путь от корня */
+    background-image: url('background.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.7; /* Уменьшаем прозрачность фона */
-    /*filter: blur(2px); /* Добавляем размытие */
+    opacity: 0.7; 
+    /*filter: blur(2px); 
     /*-webkit-filter: blur(8px);*/
     z-index: 1;
 }
 
-/* Добавляем дополнительный слой для эффекта матового стекла */
+
 .hero-background::after {
     content: '';
     position: absolute;
@@ -53,7 +53,7 @@ body {
     -webkit-backdrop-filter: blur(2px);
 }
 
-/* Убедимся, что контент поверх фона */
+
 .hero-content {
     position: relative;
     z-index: 2;
@@ -75,13 +75,13 @@ body {
     font-size: 1.25rem;
     color: #4B5563;
     max-width: 600px;
-    margin: 0 auto 4rem; /* Увеличили отступ снизу */
+    margin: 0 auto 4rem; 
 }
 
 .hero-cta-button {
     display: inline-block;
-    padding: 1.2rem 3rem; /* Увеличили горизонтальный padding */
-    margin-top: 0.1rem; /* Уменьшили отступ сверху */
+    padding: 1.2rem 3rem; 
+    margin-top: 0.1rem; 
     margin-bottom: 3rem;
     background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
     color: white;
@@ -91,8 +91,8 @@ body {
     font-size: 1.1rem;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    min-width: 250px; /* Добавили минимальную ширину */
-    text-align: center; /* Центрируем текст */
+    min-width: 250px; 
+    text-align: center; 
 }
 
 .hero-cta-button:hover {
@@ -100,7 +100,7 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Стили для сетки преимуществ */
+
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -151,7 +151,7 @@ body {
     margin: 0;
 }
 
-/* Медиа-запросы для адаптивности */
+
 @media (max-width: 1024px) {
     .benefits-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -185,23 +185,23 @@ body {
     }
 
     .nav-links {
-        display: none; /* Скрываем навигационные ссылки по умолчанию */
-        flex-direction: column; /* Вертикальное расположение */
+        display: none; 
+        flex-direction: column; 
         position: absolute;
-        top: 100%; /* Позиционируем под хедером */
+        top: 100%; 
         left: 0;
-        width: 100%; /* Занимает всю ширину */
-        background: white; /* Фон для выпадающего меню */
+        width: 100%; 
+        background: white; 
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        z-index: 999; /* Убедитесь, что меню поверх других элементов */
+        z-index: 999; 
     }
 
     .nav-links.active {
-        display: flex; /* Показываем навигационные ссылки при активации */
+        display: flex; 
     }
 
     .menu-toggle {
-        display: block; /* Показываем гамбургер на мобильных */
+        display: block; 
     }
 
     .hero-cta-button {
@@ -209,11 +209,11 @@ body {
         font-size: 1rem;
         margin-top: 1rem;
         margin-bottom: 2rem;
-        min-width: 200px; /* Уменьшили минимальную ширину для мобильных */
+        min-width: 200px; 
     }
 }
 
-/* Секция услуг */
+
 #services {
     padding: 100px 0;
     text-align: center;
@@ -252,7 +252,7 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Добавляем стили для контейнера страницы */
+
 .page-container {
     max-width: 1920px;
     margin: 0 auto;
@@ -260,7 +260,7 @@ body {
     overflow: hidden;
 }
 
-/* Обновляем стили для хедера */
+
 .header-container {
     display: flex;
     position: fixed;
@@ -279,9 +279,9 @@ body {
     z-index: 9999;
 }
 
-/* Компактное состояние */
+
 .header-container.compact {
-    width: 300px; /* Увеличили ширину для больших экранов */
+    width: 300px; 
     padding: 0.8rem 1.5rem;
     transform: translateX(-50%);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -295,7 +295,7 @@ body {
     transform: scale(0.9);
 }
 
-/* Обновляем стили для скрытия элементов в компактном режиме */
+
 .header-container.compact .nav-links,
 .header-container.compact .menu-toggle {
     display: none;
@@ -311,7 +311,7 @@ body {
     transform: translate(-50%, -110%);
 }
 
-/* Стили для контейнера логотипа */
+
 .logo-container {
     display: flex;
     justify-content: space-between;
@@ -321,7 +321,7 @@ body {
     transform-origin: center;
 }
 
-/* Стили для логотипа */
+
 .logo {
     font-weight: 700;
     font-size: 1.8rem;
@@ -332,7 +332,7 @@ body {
     transition: font-size 0.3s ease;
 }
 
-/* Стили для навигационных ссылок */
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -355,14 +355,14 @@ body {
     opacity: 0.8;
 }
 
-/* Медиа-запрос для адаптивности */
+
 @media (max-width: 1200px) {
     .services-grid {
         grid-template-columns: repeat(2, minmax(280px, 350px));
     }
 }
 
-/* Стили для кнопки меню (гамбургера) */
+
 .menu-toggle {
     display: none;
     background: none;
@@ -406,7 +406,7 @@ body {
     bottom: 6px;
 }
 
-/* Анимация для крестика */
+
 .menu-toggle.active .line-1 {
     transform: translateY(5px) rotate(45deg);
 }
@@ -419,14 +419,14 @@ body {
     transform: translateY(-5px) rotate(-45deg);
 }
 
-/* На больших экранах всегда скрываем гамбургер */
+
 @media (min-width: 769px) {
     .menu-toggle {
-        display: none !important; /* Принудительно скрываем на больших экранах */
+        display: none !important; 
     }
 }
 
-/* Чат-виджет */
+
 .chat-widget {
     position: fixed;
     bottom: 2rem;
@@ -496,7 +496,7 @@ body {
     opacity: 1;
 }
 
-/* Текст-бокс (виджет в закрытом состоянии) */
+
 .chat-toggle {
     position: absolute;
     bottom: 0;
@@ -515,7 +515,7 @@ body {
     height: 100%;
     padding: 0.8rem 1.5rem;
     border: none;
-    font-size: 1.1rem; /* Увеличиваем размер шрифта */
+    font-size: 1.1rem; 
     background: white;
     background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
     -webkit-background-clip: text;
@@ -523,7 +523,7 @@ body {
     color: transparent;
     cursor: pointer;
     text-align: center;
-    font-weight: 500; /* Добавляем небольшую жирность */
+    font-weight: 500; 
 }
 
 .chat-toggle input::placeholder {
@@ -533,7 +533,7 @@ body {
     color: transparent;
 }
 
-/* Сообщения */
+
 #chat-messages {
     display: none;
     padding: 1.5rem;
@@ -568,10 +568,10 @@ body {
     color: var(--text-color);
     margin-right: auto;
     border-radius: 1rem 1rem 1rem 0;
-    white-space: pre-line; /* Для корректного отображения переносов строк */
+    white-space: pre-line; 
 }
 
-/* Поле ввода */
+
 .chat-input {
     position: absolute;
     bottom: 0;
@@ -599,13 +599,13 @@ body {
     font-size: 0.95rem;
     outline: none;
     transition: border-color 0.3s ease;
-    min-width: 0; /* Позволяет input сжиматься */
+    min-width: 0; 
 }
 
 .chat-input button {
     width: 32px;
     height: 32px;
-    min-width: 32px; /* Фиксированная минимальная ширина */
+    min-width: 32px; 
     background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
     color: white;
     border: none;
@@ -626,14 +626,14 @@ body {
     font-size: 0.9rem;
 }
 
-/* Медиа-запрос для увеличения ширины на больших экранах */
+
 @media (min-width: 769px) {
     .chat-widget {
-        width: 500px; /* Увеличиваем ширину для больших экранов */
+        width: 500px; 
     }
 }
 
-/* Стили для футера */
+
 footer {
     width: 100vw;
     max-width: 1920px;
@@ -648,17 +648,17 @@ footer {
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 220px); /* Уменьшаем до 2 колонок */
+    grid-template-columns: repeat(2, 220px); 
     gap: 2rem;
     padding: 0 2rem;
-    justify-content: center; /* Центрируем колонки */
-    text-align: center; /* Центрируем текст */
+    justify-content: center; 
+    text-align: center; 
 }
 
 .footer-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Центрируем содержимое колонок */
+    align-items: center; 
 }
 
 .footer-section h4 {
@@ -715,7 +715,7 @@ footer {
     opacity: 0.8;
 }
 
-/* Медиа-запросы для футера */
+
 @media (max-width: 1200px) {
     .footer-content {
         grid-template-columns: repeat(2, 220px);
@@ -724,7 +724,7 @@ footer {
 
 @media (max-width: 768px) {
     .footer-content {
-        grid-template-columns: 220px; /* Одна колонка на мобильных */
+        grid-template-columns: 220px; 
     }
 }
 
@@ -734,18 +734,18 @@ footer {
     }
 }
 
-/* Медиа-запрос для мобильных устройств */
+
 @media (max-width: 768px) {
     .header-container {
         top: 10px;
         padding: 1rem 1.5rem;
-        transform: translateX(-50%); /* Всегда центрируем */
+        transform: translateX(-50%); 
     }
 
     .header-container.compact {
-        width: 180px; /* Меньшая ширина для мобильных */
+        width: 180px; 
         padding: 0.8rem 1rem;
-        transform: translateX(-50%); /* Всегда центрируем */
+        transform: translateX(-50%); 
     }
 
     .header-container.compact .logo-container {
@@ -756,8 +756,8 @@ footer {
     }
 
     .header-container.compact .logo {
-        font-size: 1rem; /* Меньший размер шрифта для мобильных */
-        max-width: 100%; /* Ограничиваем максимальную ширину */
+        font-size: 1rem; 
+        max-width: 100%; 
     }
 
     .logo {
@@ -774,11 +774,11 @@ footer {
     }
     
     .chat-container {
-        width: 100%; /* На мобильных занимает 100% ширины виджета */
+        width: 100%; 
     }
 }
 
-/* Добавьте стили для затемнения фона */
+
 .overlay {
     display: none;
     position: fixed;
@@ -797,7 +797,7 @@ footer {
     opacity: 1;
 }
 
-/* Обновите стили для мобильного меню */
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -840,25 +840,25 @@ footer {
     }
 }
 
-/* Добавляем медиа-запрос для мобильных устройств */
+
 @media (max-width: 768px) {
     .logo {
-        font-size: 1.2rem; /* Уменьшаем размер шрифта */
-        padding: 0 0.5rem; /* Уменьшаем отступы */
-        max-width: 200px; /* Ограничиваем максимальную ширину */
-        white-space: nowrap; /* Предотвращаем перенос текста */
-        overflow: hidden; /* Скрываем выходящий за пределы текст */
-        text-overflow: ellipsis; /* Добавляем многоточие при переполнении */
+        font-size: 1.2rem; 
+        padding: 0 0.5rem; 
+        max-width: 200px; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
     }
 
-    /* Уменьшаем размер шрифта в компактном режиме */
+   
     .header-container.compact .logo {
         font-size: 1rem;
         padding: 0 0.3rem;
     }
 }
 
-/* Второй экран - Преимущества */
+
 .benefits {
     padding: 100px 0 60px;
     background: white;
@@ -871,10 +871,10 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: flex-start; /* Выравниваем по верхнему краю */
+    align-items: flex-start; 
 }
 
-/* Левая часть */
+
 .benefits-text h2 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -883,8 +883,8 @@ footer {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    line-height: 1.4; /* Увеличиваем межстрочный интервал */
-    white-space: pre-line; /* Сохраняем переносы строк из текста */
+    line-height: 1.4; 
+    white-space: pre-line; 
 }
 
 .benefits-text p {
@@ -893,7 +893,7 @@ footer {
     color: var(--text-color);
 }
 
-/* Правая часть */
+
 .benefits-stats h3 {
     font-size: 1.8rem;
     font-weight: 600;
@@ -932,7 +932,7 @@ footer {
 }
 
 .stats-grid {
-    margin-top: auto; /* Прижимаем сетку статистики к низу */
+    margin-top: auto; 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -969,7 +969,7 @@ footer {
     transform: translateY(0);
 }
 
-/* Добавляем задержку для каждой карточки */
+
 .stat-card:nth-child(1) .stat-number { transition-delay: 0s; }
 .stat-card:nth-child(2) .stat-number { transition-delay: 0.1s; }
 .stat-card:nth-child(3) .stat-number { transition-delay: 0.2s; }
@@ -1030,7 +1030,7 @@ footer {
     }
 }
 
-/* Экран с преимуществами */
+
 .features {
     padding: 100px 0;
     background: var(--light-gray);
@@ -1038,7 +1038,7 @@ footer {
     overflow: hidden;
 }
 
-/* Добавляем фоновое изображение */
+
 .features::before {
     content: '';
     position: absolute;
@@ -1046,11 +1046,11 @@ footer {
     right: 0;
     width: 50%;
     height: 100%;
-    background-image: url('/robot.png'); /* Убедитесь, что путь к изображению правильный */
+    background-image: url('robot.png'); 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right center;
-    opacity: 0.1; /* Делаем изображение полупрозрачным */
+    opacity: 0.1; 
     z-index: 1;
 }
 
@@ -1059,7 +1059,7 @@ footer {
     margin: 0 auto;
     padding: 0 2rem;
     position: relative;
-    z-index: 2; /* Размещаем контент поверх фона */
+    z-index: 2; 
 }
 
 .features-cards {
@@ -1112,7 +1112,7 @@ footer {
     color: #666;
 }
 
-/* Медиа-запросы */
+
 @media (max-width: 768px) {
     .features {
         padding: 60px 0;
@@ -1132,21 +1132,21 @@ footer {
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         gap: 1rem;
-        width: fit-content; /* Позволяет контейнеру расшириться для всех карточек */
+        width: fit-content; 
     }
 
     .feature-card {
-        flex: 0 0 300px; /* Фиксированная ширина карточки */
+        flex: 0 0 300px; 
         scroll-snap-align: start;
         margin-right: 1rem;
-        width: 300px; /* Явно задаем ширину */
+        width: 300px; 
     }
 
     .feature-card:last-child {
         margin-right: 1rem;
     }
 
-    /* Уменьшаем размеры элементов внутри карточки */
+    
     .feature-icon {
         width: 60px;
         height: 60px;
@@ -1167,7 +1167,7 @@ footer {
         line-height: 1.4;
     }
 
-    /* Стилизация скроллбара */
+    
     .features-container::-webkit-scrollbar {
         height: 6px;
     }
@@ -1184,12 +1184,12 @@ footer {
 
     .features::before {
         width: 100%;
-        opacity: 0.05; /* Делаем фон еще более прозрачным на мобильных */
+        opacity: 0.05; 
         background-position: center right;
     }
 }
 
-/* Экран с этапами сотрудничества */
+
 .roadmap {
     padding: 40px 0;
     background: white;
@@ -1201,9 +1201,9 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
-    display: flex; /* Добавляем flex */
+    display: flex; 
     flex-direction: column;
-    align-items: center; /* Центрируем содержимое */
+    align-items: center; 
 }
 
 .roadmap h2 {
@@ -1218,8 +1218,8 @@ footer {
 
 .timeline {
     position: relative;
-    max-width: 800px; /* Уменьшаем максимальную ширину */
-    width: 100%; /* Добавляем полную ширину */
+    max-width: 800px; 
+    width: 100%; 
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1242,13 +1242,13 @@ footer {
     margin-bottom: 2rem;
     width: 100%;
     opacity: 0;
-    transform: translateY(50px); /* Увеличиваем начальное смещение */
-    transition: all 0.8s ease; /* Увеличиваем длительность анимации */
+    transform: translateY(50px); 
+    transition: all 0.8s ease; 
     display: flex;
     justify-content: center;
 }
 
-/* Добавляем разную задержку для каждой карточки */
+
 .timeline-item:nth-child(1) { transition-delay: 0.1s; }
 .timeline-item:nth-child(2) { transition-delay: 0.2s; }
 .timeline-item:nth-child(3) { transition-delay: 0.4s; }
@@ -1337,18 +1337,18 @@ footer {
     }
 
     .timeline-item {
-        padding: 0 1rem !important; /* Уменьшаем отступ, так как номеров больше нет */
+        padding: 0 1rem !important; 
         margin: 0 auto 1.5rem !important;
         width: 100% !important;
         max-width: 300px;
     }
 
     .step-number {
-        display: none; /* Скрываем номера на мобильных устройствах */
+        display: none; 
     }
 }
 
-/* Экран с тарифами */
+
 .pricing {
     padding: 60px 0;
     background: var(--light-gray);
@@ -1377,26 +1377,26 @@ footer {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0.5rem 1rem; /* Уменьшили верхний отступ с 2rem до 0.5rem */
+    padding: 0.5rem 1rem; 
     box-sizing: border-box;
 }
 
 .pricing-card {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Занимает всю доступную ширину */
-    min-width: 0; /* Позволяет сжиматься меньше минимальной ширины контента */
+    width: 100%; 
+    min-width: 0; 
     position: relative;
     cursor: pointer;
     background: white;
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Учитываем padding в общей ширине */
+    box-sizing: border-box; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Стили для популярного тарифа */
+
 .pricing-card.featured {
     transform: scale(1.05);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
@@ -1482,7 +1482,7 @@ footer {
 @media (max-width: 768px) {
     .pricing-cards {
         gap: 1rem;
-        padding: 0.3rem 0.5rem; /* Еще меньше отступ на мобильных */
+        padding: 0.3rem 0.5rem; 
     }
 
     .pricing-card {
@@ -1493,7 +1493,7 @@ footer {
 
 @media (max-width: 480px) {
     .cases-grid {
-        padding: 0.2rem 0.5rem; /* Минимальный отступ на маленьких экранах */
+        padding: 0.2rem 0.5rem; 
     }
 
     .case-card {
@@ -1501,7 +1501,7 @@ footer {
     }
 }
 
-/* Стили для кнопки просмотра ограничений */
+
 .view-limitations {
     background: none;
     border: none;
@@ -1539,7 +1539,7 @@ footer {
     visibility: visible;
 }
 
-/* Стили для списка ограничений */
+
 .limitations-tooltip h4 {
     color: var(--primary-color);
     margin-bottom: 1rem;
@@ -1569,7 +1569,7 @@ footer {
     color: #28a745;
 }
 
-/* Кнопка закрытия тултипа */
+
 .close-tooltip {
     position: absolute;
     top: 0.5rem;
@@ -1586,7 +1586,7 @@ footer {
     color: #333;
 }
 
-/* Стили для кнопки с иконкой информации */
+
 .info-button {
     background: none;
     border: none;
@@ -1605,7 +1605,7 @@ footer {
     z-index: 2;
 }
 
-/* Стили для текста "еще" */
+
 .info-button span {
     font-size: 0.9rem;
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
@@ -1679,7 +1679,7 @@ footer {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0.5rem 1rem; /* Уменьшили верхний отступ с 2rem до 0.5rem */
+    padding: 0.5rem 1rem; 
     box-sizing: border-box;
 }
 
@@ -1788,17 +1788,17 @@ footer {
     .cases-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-        max-width: 400px; /* Ограничиваем максимальную ширину сетки */
-        margin: 0 auto; /* Центрируем сетку */
-        padding: 0.3rem 0.5rem; /* Еще меньше отступ на мобильных */
+        max-width: 400px; 
+        margin: 0 auto; 
+        padding: 0.3rem 0.5rem; 
     }
 
     .case-card {
         width: 100%;
         margin: 0;
-        box-sizing: border-box; /* Учитываем padding в общей ширине */
+        box-sizing: border-box; 
         padding: 1rem;
-        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); /* Усиливаем тень */
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); 
     }
 
     .use-cases-container h2 {
@@ -1808,18 +1808,18 @@ footer {
     }
 
     .use-cases::before {
-        background-size: 150% auto; /* Увеличиваем масштаб для мобильных */
+        background-size: 150% auto; 
         background-position: center center;
     }
 }
 
 @media (max-width: 480px) {
     .use-cases::before {
-        background-size: 200% auto; /* Еще больше увеличиваем для маленьких экранов */
+        background-size: 200% auto; 
     }
 
     .case-card {
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Еще больше усиливаем тень */
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
     }
 }
 
@@ -1857,9 +1857,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 3rem; /* Увеличили отступы между иконками */
+    margin: 0 3rem; 
     transition: transform 0.3s ease;
-    min-width: 80px; /* Фиксированная минимальная ширина */
+    min-width: 80px; 
 }
 
 .platform-icon:hover {
@@ -1877,7 +1877,7 @@ footer {
     color: #666;
 }
 
-/* Обновляем анимацию для более плавного перехода */
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -1887,13 +1887,13 @@ footer {
     }
 }
 
-/* Делаем градиенты более плавными */
+
 .platforms-slider::before,
 .platforms-slider::after {
     content: '';
     position: absolute;
     top: 0;
-    width: 150px; /* Увеличили ширину градиента */
+    width: 150px; 
     height: 100%;
     z-index: 2;
 }
@@ -1931,7 +1931,7 @@ footer {
     padding: 40px 0;
     background: white;
     position: relative;
-    overflow: hidden; /* Чтобы изображение не выходило за пределы блока */
+    overflow: hidden; 
 }
 
 .why-us::before {
@@ -1941,7 +1941,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/robot.jpg'); /* Изменяем путь */
+    background-image: url('robot.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1951,7 +1951,7 @@ footer {
 
 .why-us-container {
     position: relative;
-    z-index: 2; /* Размещаем контент поверх фонового изображения */
+    z-index: 2; 
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -1974,8 +1974,8 @@ footer {
     align-items: flex-start;
     gap: 1.5rem;
     padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.3); /* Увеличиваем прозрачность фона */
-    backdrop-filter: blur(8px); /* Увеличиваем размытие для лучшей читаемости */
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(8px); 
     -webkit-backdrop-filter: blur(8px);
     border-radius: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1987,7 +1987,7 @@ footer {
 .reason-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0.85); /* Увеличиваем прозрачность при наведении */
+    background: rgba(255, 255, 255, 0.85); 
 }
 
 .reason-icon {
@@ -2018,7 +2018,7 @@ footer {
     font-size: 1rem;
 }
 
-/* Анимация появления элементов */
+
 @keyframes fadeInUp {
     to {
         opacity: 1;
@@ -2026,7 +2026,7 @@ footer {
     }
 }
 
-/* Задержка анимации для каждого элемента */
+
 .reason-item:nth-child(1) { animation-delay: 0.1s; }
 .reason-item:nth-child(2) { animation-delay: 0.2s; }
 .reason-item:nth-child(3) { animation-delay: 0.3s; }
@@ -2057,9 +2057,9 @@ footer {
     .reasons-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-        max-width: 400px; /* Ограничиваем максимальную ширину сетки */
-        margin: 0 auto; /* Центрируем сетку */
-        padding: 0.3rem 0.5rem; /* Еще меньше отступ на мобильных */
+        max-width: 400px; 
+        margin: 0 auto; 
+        padding: 0.3rem 0.5rem; 
     }
 
     .reason-icon {
@@ -2077,13 +2077,13 @@ footer {
     }
 
     .reason-item {
-        width: 100%; /* Гарантируем полную ширину */
-        box-sizing: border-box; /* Учитываем padding в общей ширине */
+        width: 100%; 
+        box-sizing: border-box; 
     }
 }
 
 .contact-section {
-    padding: 10px 1rem; /* Уменьшаем верхний отступ */
+    padding: 10px 1rem; 
     background: white;
     display: flex;
     justify-content: center;
@@ -2100,7 +2100,7 @@ footer {
 
 .contact-container h2 {
     margin-bottom: 2rem;
-    margin-top: 0; /* Убираем верхний отступ */
+    margin-top: 0; 
     font-size: 2.5rem;
     color: var(--text-color);
 }
@@ -2119,7 +2119,7 @@ footer {
     box-sizing: border-box;
 }
 
-/* Поля ввода */
+
 .form-field,
 .contact-field,
 .form-tabs,
@@ -2177,7 +2177,7 @@ footer {
     color: white;
 }
 
-/* Контентная часть */
+
 .form-content {
     display: flex;
     flex-direction: column;
@@ -2250,7 +2250,7 @@ footer {
     box-shadow: 0 4px 12px rgba(var(--primary-color-rgb), 0.2);
 }
 
-/* Кнопка отправки */
+
 .submit-button {
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     color: white;
@@ -2267,7 +2267,7 @@ footer {
 /* Адаптивность */
 @media (max-width: 768px) {
     .contact-section {
-        padding: 10px 1rem; /* Уменьшаем верхний отступ на мобильных */
+        padding: 10px 1rem; 
     }
 
     .contact-container {
@@ -2365,7 +2365,7 @@ footer {
     background: var(--gradient-end);
 }
 
-/* Индикатор загрузки */
+
 .typing-indicator {
     display: flex;
     gap: 4px;
@@ -2393,7 +2393,7 @@ footer {
     50% { transform: translateY(-10px); }
 }
 
-/* Кнопка повторной попытки */
+
 .retry-button {
     background: var(--primary-color);
     color: white;
@@ -2410,7 +2410,7 @@ footer {
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-/* Стили для панели аналитики */
+
 .analytics-dashboard {
     position: fixed;
     top: 20px;
@@ -2429,7 +2429,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Индикатор эмоций */
+
 .emotion-indicator {
     position: absolute;
     top: -20px;
